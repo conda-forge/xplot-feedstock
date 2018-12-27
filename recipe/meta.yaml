@@ -40,7 +40,7 @@ test:
 
 about:
   home: http://quantstack.net/xplot
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: 'C++ backend for the bqplot 2-D plotting library'
