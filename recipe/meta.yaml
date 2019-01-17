@@ -1,6 +1,6 @@
 {% set name = "xplot" %}
-{% set version = "0.10.0" %}
-{% set sha256 = "41ee5388f865d7c1a38ac1e1a15fc586b1e6e00193b1da1ede612a819e91c4fd" %}
+{% set version = "0.11.0" %}
+{% set sha256 = "9016ccfbac9abfc5b7f44ab4a44e18421c193ea8d23f1135fa90573327cb9629" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
-  {% if 'toolchain' in compiler('cxx') %}skip: True{% endif %}  # Only build with modern compilers.
+  number: 0
   skip: true  # [win and vc<14]
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
@@ -23,10 +22,10 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
   host:
-    - xeus >=0.17.0,<0.18
+    - xeus >=0.18.1,<0.19
     - xtl >=0.5.2,<0.6
-    - xproperty >=0.7.0,<0.8
-    - xwidgets >=0.15.0,<0.16
+    - xproperty >=0.8.0,<0.9
+    - xwidgets >=0.16.0,<0.17
 
 test:
   commands:
