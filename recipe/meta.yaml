@@ -1,6 +1,6 @@
 {% set name = "xplot" %}
-{% set version = "0.12.0" %}
-{% set sha256 = "96e75950fe8f0e3f83f02e8cd85080e709fc53e8600ea3cf36f09210da01309a" %}
+{% set version = "0.13.0" %}
+{% set sha256 = "7fbbefe560d0bae1b467bade6ba823b4b7255064dc5db255345ee722b0a0c87e" %}
 
 package:
   name: {{ name|lower }}
