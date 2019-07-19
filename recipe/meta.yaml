@@ -1,6 +1,6 @@
 {% set name = "xplot" %}
-{% set version = "0.13.0" %}
-{% set sha256 = "7fbbefe560d0bae1b467bade6ba823b4b7255064dc5db255345ee722b0a0c87e" %}
+{% set version = "0.14.0" %}
+{% set sha256 = "690781437b63ec6813f41c1813cbbc296dc155d69b5f57630c7a8c110023b61f" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win and vc<14]
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
