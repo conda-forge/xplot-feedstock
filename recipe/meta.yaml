@@ -1,6 +1,6 @@
 {% set name = "xplot" %}
-{% set version = "0.13.0" %}
-{% set sha256 = "7fbbefe560d0bae1b467bade6ba823b4b7255064dc5db255345ee722b0a0c87e" %}
+{% set version = "0.14.0" %}
+{% set sha256 = "690781437b63ec6813f41c1813cbbc296dc155d69b5f57630c7a8c110023b61f" %}
 
 package:
   name: {{ name|lower }}
@@ -22,10 +22,10 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
   host:
-    - xeus >=0.20.0,<0.21
+    - xeus >=0.21.1,<0.22
     - xtl >=0.6.5,<0.7
     - xproperty >=0.8.1,<0.9
-    - xwidgets >=0.18.0,<0.19
+    - xwidgets >=0.19.0,<0.20
 
 test:
   commands:
